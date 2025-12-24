@@ -30,7 +30,7 @@
       /* optional but usually helps avoid accidental holds */
       quick-tap-ms = <175>;
 
-      bindings = <&mo 2>, <&td_bspc>;
+      bindings = <&mo 2 &td_bspc>;
     };
   };
     
