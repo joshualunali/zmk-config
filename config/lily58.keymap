@@ -10,6 +10,32 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+    behaviors {
+    /* Tap side: 1 tap = BSPC, 2 taps = Ctrl+BSPC */
+    td_bspc: td_bspc {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp BSPC>, <&kp C_BSPC>;
+    };
+
+    /* Wrapper: tap runs the tap-dance above, hold does momentary layer 1 */
+    ht_bspc_lower: ht_bspc_lower {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <0>;
+
+      flavor = "tap-preferred";
+      tapping-term-ms = <200>;
+
+      /* optional but usually helps avoid accidental holds */
+      quick-tap-ms = <175>;
+
+      bindings = <&mo 1>, <&td_bspc>;
+    };
+  };
+    
+   
+    
     keymap {
         compatible = "zmk,keymap";
 
@@ -68,3 +94,4 @@
         };
     };
 };
+
