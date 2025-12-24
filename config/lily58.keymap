@@ -43,7 +43,7 @@
       tapping-term-ms = <0>;
       bindings = <&kp LCTRL>, <&kp LGUI>;
       
-    }
+    };
   };
     
    
