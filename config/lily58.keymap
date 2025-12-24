@@ -22,7 +22,7 @@
     /* Wrapper: tap runs the tap-dance above, hold does momentary layer 1 */
     ht_bspc_lower: ht_bspc_lower {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
+      #binding-cells = <2>;
 
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
@@ -30,7 +30,7 @@
       /* optional but usually helps avoid accidental holds */
       quick-tap-ms = <175>;
 
-      bindings = <&mo 1>, <&td_bspc>;
+      bindings = <&mo>, <&kp>;
     };
   };
     
