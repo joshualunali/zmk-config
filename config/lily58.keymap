@@ -10,19 +10,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
-    behaviours {
-        td_mt: backspace_tap_dance_mod_tap {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mt BSPC &mo 1>, <&kp LC(BSPC)>;
-        };
-    };
-    
-    &mt {
-        tapping-term-ms = <250>; // This is the value already set by default
-    };  
-    
     keymap {
         compatible = "zmk,keymap";
 
