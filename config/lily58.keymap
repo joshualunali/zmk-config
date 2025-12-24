@@ -16,7 +16,7 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp BSPC>, <&kp C_BSPC>;
+      bindings = <&kp BSPC>, <&kp LC(BSPC)>;
     };
 
     /* Wrapper: tap runs the tap-dance above, hold does momentary layer 1 */
