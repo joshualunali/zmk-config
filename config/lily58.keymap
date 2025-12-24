@@ -37,11 +37,11 @@
       bindings = <&lt 2 BACKSPACE>, <&kp LC(BACKSPACE)>;
     };
 
-    td1: lgui_ctrl {
+    td1: lgui_alt {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp LCTRL>, <&kp LGUI>;
+      bindings = <&kp LALT>, <&kp LGUI>;
       
     };
   };
@@ -63,7 +63,7 @@
 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp BACKSLASH
 &mo 2     &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp END
-                        &td1 &kp LALT &lt 1 SPACE   &trans  &trans &td0      &kp ENTER &kp LGUI
+                        &kp LCTRL &td1 &lt 1 SPACE   &trans  &trans &td0      &kp ENTER &kp LGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
