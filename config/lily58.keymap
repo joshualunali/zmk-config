@@ -11,25 +11,7 @@
 
 / {
     behaviors {
-    /* Tap side: 1 tap = BSPC, 2 taps = Ctrl+BSPC */
-    td_bspc: td_bspc {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&kp BSPC>, <&kp LC(BSPC)>;
-    };
 
-    /* Wrapper: tap runs the tap-dance above, hold does momentary layer 1 */
-    ht_bspc_lower: ht_bspc_lower {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-
-      flavor = "tap-preferred";
-      tapping-term-ms = <200>;
-      quick-tap-ms = <175>;
-
-      bindings = <&mo &td_bspc>;
-    };
     td0: tap_dance_0 {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
