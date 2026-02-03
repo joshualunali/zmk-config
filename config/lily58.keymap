@@ -22,7 +22,7 @@
         flavor = "hold-preferred";
         tapping-term-ms = <200>;
         quick-tap-ms = <150>;
-        bindings = <&mo>, <&td1>;
+        bindings = <&mo>, <&td0>;
         display-name = "Layer-Tap";
         };
 
@@ -30,7 +30,7 @@
        compatible = "zmk,behavior-tap-dance";
        #binding-cells = <0>;
        tapping-term-ms = <100>;
-       bindings = <&lt 2 BACKSPACE>, <&kp LC(BACKSPACE)>;
+       bindings = <&kp BACKSPACE>, <&kp LC(BACKSPACE)>;
      };
 
      td1: lgui_alt {
