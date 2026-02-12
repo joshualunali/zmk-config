@@ -1,0 +1,1 @@
+This is my repository for my keyboard firmware. It's setup by default to build my firmware through GitHub actions so I can build away from my PC. There's not a ton to see in here, so check out some other repositories.
