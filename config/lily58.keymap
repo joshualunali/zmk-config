@@ -22,7 +22,7 @@
         flavor = "hold-preferred";
         tapping-term-ms = <150>;
         quick-tap-ms = <150>;
-        bindings = <&mo>, <&td0>;
+        bindings = <&mo>, <&kp BACKSPACE>;
         display-name = "Layer-Tap";
         };
 
