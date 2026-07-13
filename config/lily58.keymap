@@ -20,7 +20,7 @@
       lt0: layer_tap_0 {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
-        flavor = "hold-preferred";
+        flavor = "balanced";
         tapping-term-ms = <150>;
         quick-tap-ms = <150>;
         bindings = <&mo >, <&td0>;
