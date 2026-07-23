@@ -22,8 +22,8 @@
         #binding-cells = <2>;
         flavor = "tap-preferred";
         tapping-term-ms = <150>;
-        quick-tap-ms = <125>;
-        require-prior-idle-ms = <125>;
+        quick-tap-ms = <150>;
+        require-prior-idle-ms = <100>;
         bindings = <&mo >, <&td0>;
         display-name = "Layer-Tap";
         };
@@ -34,8 +34,8 @@
         #binding-cells = <2>;
         flavor = "tap-preferred";
         tapping-term-ms = <150>;
-        quick-tap-ms = <25>;
-        require-prior-idle-ms = <125>;
+        quick-tap-ms = <150>;
+        require-prior-idle-ms = <100>;
         bindings = <&mo >, <&kp>;
         display-name = "Layer-Tap";
         };
